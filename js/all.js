@@ -7128,7 +7128,7 @@ window.addEventListener("load", function() {
 var panel, background, ua = navigator.userAgent, isSharpStock = /SHL24|SH-01F/i.test(ua) && isStock(), isXperiaAStock = /SO-04E/i.test(ua) && isStock(), isFujitsuStock = /F-01F/i.test(ua) && isStock();
 isIE10 || isSharpStock || isXperiaAStock || isFujitsuStock || void 0 === window.AudioContext && void 0 === window.webkitAudioContext && -1 != navigator.userAgent.indexOf("Android") ? audioType = 0 : (audioType = 1,
 sound = new Howl({
-    src: ["https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/audio/sound.ogg", "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/audio/sound.m4a"],
+    src: ["https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/audio/sound.ogg", "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/audio/sound.m4a"],
     sprite: {
         bounce0: [0, 400],
         bounce1: [500, 400],
@@ -7157,7 +7157,7 @@ sound = new Howl({
     }
 }),
 music = new Howl({
-    src: ["https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/audio/music.ogg", "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/audio/music.m4a"],
+    src: ["https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/audio/music.ogg", "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/audio/music.m4a"],
     volume: 0,
     loop: !0
 }));
@@ -7602,7 +7602,7 @@ function butEventHandler(t, a) {
         userInput.removeHitArea("langSelect"),
         (preAssetLib = new Utils.AssetLoader(curLang,[{
             id: "preloadImage",
-            file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/preloadImage.jpg"
+            file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/preloadImage.jpg"
         }],ctx,canvas.width,canvas.height,!1)).onReady(initLoadAssets);
         break;
     case "credits":
@@ -8089,17 +8089,17 @@ function loadPreAssets() {
         for (var t = new Array, a = 0; a < aLangs.length; a++)
             t.push({
                 id: "lang" + aLangs[a],
-                file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/lang" + aLangs[a] + ".png"
+                file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/lang" + aLangs[a] + ".png"
             });
         (preAssetLib = new Utils.AssetLoader(curLang,t,ctx,canvas.width,canvas.height,!1)).onReady(initLangSelect)
     } else
         curLang = aLangs[0],
         (preAssetLib = new Utils.AssetLoader(curLang,[{
             id: "loader",
-            file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/loader.png"
+            file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/loader.png"
         }, {
             id: "loadSpinner",
-            file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/loadSpinner.png"
+            file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/loadSpinner.png"
         }],ctx,canvas.width,canvas.height,!1)).onReady(initLoadAssets)
 }
 function initLangSelect() {
@@ -8133,29 +8133,29 @@ function loadAssets() {
     try {
         t = window.famobi.getMoreGamesButtonImage()
     } catch (a) {
-        t = "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/BrandingPlaceholderButton.png"
+        t = "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/BrandingPlaceholderButton.png"
     }
     assetLib = new Utils.AssetLoader(curLang,[{
         id: "background",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/bgMain.jpg"
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/bgMain.jpg"
     }, {
         id: "splashLogo",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/splashLogo.png"
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/splashLogo.png"
     }, {
         id: "countryFlags",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/countryFlags.jpg"
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/countryFlags.jpg"
     }, {
         id: "largeNumbers",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/largeNumbers_75x132.png"
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/largeNumbers_75x132.png"
     }, {
         id: "smallNumbers",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/smallNumbers_23x34.png"
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/smallNumbers_23x34.png"
     }, {
         id: "scoreNumbers",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/scoreNumbers_20x37.png"
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/scoreNumbers_20x37.png"
     }, {
         id: "uiButs",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/uiButs.png",
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/uiButs.png",
         oAtlasData: {
             id0: {
                 x: 0,
@@ -8268,7 +8268,7 @@ function loadAssets() {
         }
     }, {
         id: "gameElements",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/gameElements.png",
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/gameElements.png",
         oAtlasData: {
             id0: {
                 x: 637,
@@ -8477,7 +8477,7 @@ function loadAssets() {
         }
     }, {
         id: "uiElements",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/uiElements.png",
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/uiElements.png",
         oAtlasData: {
             id0: {
                 x: 499,
@@ -8596,13 +8596,13 @@ function loadAssets() {
         }
     }, {
         id: "firework",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/firework_175x175.png",
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/firework_175x175.png",
         oAnims: {
             explode: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
         }
     }, {
         id: "shadow",
-        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@main/images/shadow.png"
+        file: "https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/images/shadow.png"
     }, {
         id: "moreGamesBut",
         file: t
