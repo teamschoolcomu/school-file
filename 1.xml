@@ -51,7 +51,7 @@ canvas{-ms-touch-action:none;touch-action:none;-webkit-tap-highlight-color:rgba(
 <div id="canvas-wrapper" style="overflow:hidden;width:100%;height:100%;margin:0;padding:0;position:absolute;">
 <canvas id="canvas" moz-opaque></canvas>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@94ae69c2730ac00f3c17ee4a8973bd6eebd473be/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/teamschoolcomu/school-file@23f5bb4ea2a8d512ee382a5a077e2c2f7854d2ac/js/all.js"></script>
 <script>extGameLoad();</script>
 <!-- Sticky Bottom Center Ad (728x90) with Smooth Slide-Out and Reappearance -->
 <style>
